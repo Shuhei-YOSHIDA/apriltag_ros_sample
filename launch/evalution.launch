@@ -26,5 +26,6 @@
   <!--image_proc to publish image_rect form image_raw and camera_info-->
   <node name="image_proc" pkg="image_proc" type="image_proc" ns="/camera/color"/>
 
-  <node name="rviz" pkg="rviz" type="rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz"
+    args="-d $(find apriltag_ros_sample)/launch/evaluation.rviz"/>
 </launch>
